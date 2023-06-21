@@ -14,24 +14,22 @@
         <input type="submit" value="generate password"> 
     </form>
 
-
     <?php
         $password = $_GET['text'];
         var_dump($password);
     ?>
 
-<?php
-
-//FUNZIONE GENERA PASSWORD
-function randomPassword() {
-    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-    for ($i = 0; $i < 10; $i++) {
-        $n = rand(0, count($alphabet)-1);
-        $pass[$i] = $alphabet[$n];
-    }
-    return $pass;
-}
-?>
+    <?php
+        //FUNZIONE GENERA PASSWORD
+        function randomPassword() {
+            $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+            for ($i = 0; $i < 10; $i++) {
+                $n = rand(0, count($alphabet)-1);
+                $pass[$i] = $alphabet[$n];
+            }
+            return $pass;
+        }
+    ?>
 
 </body>
 </html>
