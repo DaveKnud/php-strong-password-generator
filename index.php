@@ -16,8 +16,13 @@
 
     <?php
     include 'functions.php';
-    ?>
 
+    session_start();
+     $_SESSION['val'] = "HELLO WORLD";
+    // header('Location: ./functions.php');
+    ?>
+    <a href="about.php">ABOUT</a>
+    
 
 </body>
 </html>
