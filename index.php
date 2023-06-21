@@ -9,7 +9,7 @@
 <body>
 
     <form>
-        <label for="password">Password</label>
+        <label for="password">Passwoord</label>
         <input type="text" name="text" id='text'>
         <input type="submit" value="generate password" id=sumbit> 
     </form>
