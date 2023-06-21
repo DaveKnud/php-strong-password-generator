@@ -11,25 +11,36 @@
     <form>
         <label for="password">Password</label>
         <input type="text" name="text" id='text'>
-        <input type="submit" value="generate password"> 
+        <input type="submit" value="generate password" id=sumbit> 
     </form>
 
     <?php
-        $password = $_GET['text'];
-        var_dump($password);
+        $passwordUtente = $_GET['text'];
+        var_dump($passwordUtente);
     ?>
 
     <?php
         //FUNZIONE GENERA PASSWORD
         function randomPassword() {
             $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-            for ($i = 0; $i < 10; $i++) {
+            for ($i = 0; $i < 8; $i++) {
                 $n = rand(0, count($alphabet)-1);
                 $pass[$i] = $alphabet[$n];
             }
             return $pass;
-        }
+        };
+
+        echo randomPassword($passwordUtente);
     ?>
+
+    <?php
+        /*
+            if($password === ""){
+                function randomPassword()
+            };
+        */
+    ?>
+
 
 </body>
 </html>
