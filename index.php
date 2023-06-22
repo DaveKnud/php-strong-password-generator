@@ -23,6 +23,6 @@
     ?>
     <a href="about.php">ABOUT</a>
     
-
+    <span> La password suggerita e': <php randomPassword($passwordUtente); ?> </span> 
 </body>
 </html>
